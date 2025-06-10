@@ -1,1 +1,1 @@
-print(Student.var)
+print(anurag.__dict__)

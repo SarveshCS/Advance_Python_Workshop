@@ -66,3 +66,5 @@ All classes have this `__init__` method, which is executed when a new object is 
 Use the init method to asign values to object propertiesor other operatiosn that are neccessary to do for creation of a object of tht class.
 
 The init method is called automatically everytime a class is being used to create a new object.
+
+#### self parameter
