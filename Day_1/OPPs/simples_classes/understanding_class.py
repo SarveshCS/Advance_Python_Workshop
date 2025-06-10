@@ -9,3 +9,5 @@ class Student:
 
 Ram = Student(10)
 Raju = Student(20)
+
+print(Student.class_var)
