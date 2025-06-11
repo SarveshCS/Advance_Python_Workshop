@@ -118,36 +118,43 @@ a. Create a method called area which will compute the area of the rectangle
 
 ### Project: BankAccount
 
-**Class Variables:**
+Class Variables:
+
 - `total_accounts` - tracks the total number of accounts created
 
-**Instance Variables:**
+Instance Variables:
+
 - `account_number` - unique account identifier
 - `name` - account holder's name
 - `balance` - current account balance
 - `account_type` - either "saving" or "current" account
 - `transaction_history` - list to track all transactions
 
-**Instance Methods:**
+Instance Methods:
+
 - `deposit(amount)` - add money to the account
 - `withdraw(amount)` - remove money from the account
 - `display_account_summary()` - show recent transactions
 
-**Class Methods:**
+Class Methods:
+
 - `view_total_accounts()` - display the total number of accounts
 - `display_bank_information()` - show bank details
 
-**Static Methods:**
+Static Methods:
+
 - `is_valid_minimum_balance(amount)` - check if amount is greater than or equal to 1000
 
-**Requirements:**
+Requirements:
+
 - Each account will have a unique account ID
 - Track transaction history for all operations
 - Display account summary with recent transactions
 
 [Banking System Implementation](.\project\banking_system\main.py)ount is greater than or equal to 1000
 
-**Requirements:**
+Requirements:
+
 - Each account will have a unique account ID
 - Track transaction history for all operations
 - Display account summary with recent transactions
