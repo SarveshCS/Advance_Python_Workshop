@@ -86,9 +86,9 @@ It works like a wrapper, and when used the function it is used on it passed as a
 4. Function can return a fucntion from a function.
 5. Function can be stored in different data structures like list etc.
 
-- [Demonstration of functions as a argument and storign functions as a variable](./decorators/prerequisites/function_as_argument.py)
+- [Demonstration of functions as a argument and storign functions as a variable](./decorators/prerequisites/instance_method/function_as_argument.py)
 
-- [Demonstration of functions inside a funcion](./decorators/prerequisites/function_inside_function.py)
+- [Demonstration of functions inside a funcion](./decorators/prerequisites/instance_method/function_inside_function.py)
 
 ### [Program to demonstrate decorators](./decorators/main.py)
 
@@ -104,6 +104,8 @@ It works like a wrapper, and when used the function it is used on it passed as a
 
 Class methods are methods that are called on the class itself not on a specific object instance, and all class instances share a class method.
 
+It uses `@classmethod` decotator.
+
 1. A class method is bound to the class and not to the object of the class, It can access only class variables.
 2. It can modify the class state by chnaging the values of the class variable that would apply across all the class objects.
 
@@ -111,3 +113,51 @@ Class methods are methods that are called on the class itself not on a specific 
 a. Create a method called area which will compute the area of the rectangle
 
 - [Answer 3](./decorators/question_3.py)
+
+#### Dianamically add class method to class
+
+### Project: BankAccount
+
+**Class Variables:**
+- `total_accounts` - tracks the total number of accounts created
+
+**Instance Variables:**
+- `account_number` - unique account identifier
+- `name` - account holder's name
+- `balance` - current account balance
+- `account_type` - either "saving" or "current" account
+- `transaction_history` - list to track all transactions
+
+**Instance Methods:**
+- `deposit(amount)` - add money to the account
+- `withdraw(amount)` - remove money from the account
+- `display_account_summary()` - show recent transactions
+
+**Class Methods:**
+- `view_total_accounts()` - display the total number of accounts
+- `display_bank_information()` - show bank details
+
+**Static Methods:**
+- `is_valid_minimum_balance(amount)` - check if amount is greater than or equal to 1000
+
+**Requirements:**
+- Each account will have a unique account ID
+- Track transaction history for all operations
+- Display account summary with recent transactions
+
+[Banking System Implementation](.\project\banking_system\main.py)ount is greater than or equal to 1000
+
+**Requirements:**
+- Each account will have a unique account ID
+- Track transaction history for all operations
+- Display account summary with recent transactions
+
+[Banking System Implementation](.\project\banking_system\main.py)
+
+#### 3. static method
+
+1. A static method is a general utility method that performs a task in isolation.
+2. It is bound to the class and not to the object of the class, therefore we call it using the class name.
+3. It does not have access to the class and the instance variable because it does not receive an explicit argument like the `self`, `cls`, therefor it cannot modify the state of the object or class.
+4. It is much like the class method which is bound to the class rather than the object.
+5. It does not require instance creation. So, they are not dependent on the state of the
