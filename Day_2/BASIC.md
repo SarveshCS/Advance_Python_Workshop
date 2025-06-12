@@ -151,15 +151,13 @@ Requirements:
 - Track transaction history for all operations
 - Display account summary with recent transactions
 
-[Banking System Implementation](.\project\banking_system\main.py)ount is greater than or equal to 1000
-
 Requirements:
 
 - Each account will have a unique account ID
 - Track transaction history for all operations
 - Display account summary with recent transactions
 
-[Banking System Implementation](.\project\banking_system\main.py)
+[Banking System Implementation](../projects/banking_system/main.py)
 
 #### 3. static method
 
