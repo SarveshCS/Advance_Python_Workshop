@@ -22,11 +22,11 @@ Emp.sample(10) # calling static method by virtue of an object
 
 > `class method` vs `instance method` vs `static method`
 
-| Class method | vs | Instance method | vs | Static method |
-|:------------:|:------------:|:-------------:|:------------:|:---------------:|
-|Bound to the class||Bound to the object of the class||Bound to the class|
-|It can modify a class state||It can modify an object state||It can't modify a class or object state|
-|Can access only class variable||Can access and modify both class and instance variable||Can't access or modify the class or instance variable|
+| Class method | Instance method | Static method |
+|:-------------|:--------------|:------------:|
+|Bound to the class|Bound to the object of the class|Bound to the class|
+|It can modify a class state|It can modify an object state|It can't modify a class or object state|
+|Can access only class variable|Can access and modify both class and instance variable|Can't access or modify the class or instance variable|
 
 ## Magic methods
 
