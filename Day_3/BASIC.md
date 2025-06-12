@@ -65,6 +65,86 @@ The new class is called a derived or child class and the one from which inherits
 - It provides the feature of reusability, which allows the user to add mroe features to the derived class without altering it.
 - If a class `Y` inherits fromt he class `X` then, automatically all the subclasses of `Y` would inherit from class `X`.
 
-```python
+#### Syntax
 
+```psudo
+class <class_name>[(parent_class)]:
+    pass
 ```
+
+#### Example
+
+```python
+class Person:
+    pass
+
+print(Person.__base__) # <class 'object'>
+
+class Teacher(Person):
+    pass
+
+print(Teacher.__base__) # <class '__main__.Person'>
+```
+
+[Click here to check out this code](./OOPs_Concepts/inheritance/basic.py)
+
+#### 1. Single Inheritance
+
+```python
+class A:
+    def meth1(self):
+        print('Inside Method 1')
+
+    def meth2(self):
+        print('Inside Method 2')
+
+class B(A):
+    def meth3(self):
+        print('Inside Method 3')
+
+obj1 = B()
+obj1.meth1() # Inside Method 1
+obj1.meth2() # Inside Method 2
+obj1.meth3() # Inside Method 3
+
+obj1 = A()
+obj1.meth1() # Inside Method 1
+obj1.meth2() # Inside Method 2
+obj1.meth3() #AttributeError: 'A' object has no attribute 'meth3'. Did you mean: 'meth1'?
+```
+
+[Click here to check out this code](./OOPs_Concepts/inheritance/implementation.py)
+
+#### Attributes Accessibility
+
+```python
+class A:
+    def setdataA(self):
+        self.attr1 = 90
+        self.__attr2 = 100
+
+    def check(self):
+        print("Inside Mehtod 1")
+        print("Attribute 1:", self.attr1)
+        print("Attribute 2:", self.__attr2)
+
+class B(A):
+    def setdataB(self):
+        self.attr3 = 50
+        self.__attr4 = 70
+    
+    def check2(self):
+        print("Inside Mehtod 2")
+        print("Attribute 3:", self.attr3)
+        print("Attribute 4:", self.__attr4)
+        print("Attribute 1:", self.attr1)
+
+obj1 = B()
+obj1.setdataA()
+obj1.setdataB()
+
+obj1.check()
+obj1.check2()
+```
+
+[Click here to check out this code](./OOPs_Concepts/inheritance/attribute_accessibility.py)

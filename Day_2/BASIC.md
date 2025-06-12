@@ -86,19 +86,19 @@ It works like a wrapper, and when used the function it is used on it passed as a
 4. Function can return a fucntion from a function.
 5. Function can be stored in different data structures like list etc.
 
-- [Demonstration of functions as a argument and storign functions as a variable](./decorators/prerequisites/instance_method/function_as_argument.py)
+- [Demonstration of functions as a argument and storign functions as a variable](./decorators/prerequisites/function_as_argument.py)
 
-- [Demonstration of functions inside a funcion](./decorators/prerequisites/instance_method/function_inside_function.py)
+- [Demonstration of functions inside a funcion](./decorators/prerequisites/function_inside_function.py)
 
 ### [Program to demonstrate decorators](./decorators/main.py)
 
 > Q1. Write a decorator functiosn to decorate addition to give factorial
 
-- [Answer 1](./decorators/question_1.py)
+- [Answer 1](./decorators/instance_method/question_1.py)
 
 > Q2. Write a decorator functiosn to decorate addition to give square
 
-- [Answer 2](./decorators/question_2.py)
+- [Answer 2](./decorators/instance_method/question_2.py)
 
 #### 2. Class method
 
