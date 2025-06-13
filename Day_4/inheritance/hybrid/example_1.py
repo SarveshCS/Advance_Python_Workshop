@@ -22,14 +22,14 @@ class Marks(Student):
 
 class Sports:
     def set_sports_marks(self, m1):
-        self.pmarks = m1
+        self.smarks = m1
 
     def display_sports_marks(self):
-        print(f"P Marks: {self.pmarks}\n")
+        print(f"P Marks: {self.smarks}\n")
 
 class Result(Sports, Marks):
     def cal_total(self):
-        self.total = self.marks1 + self.marks2 + self.marks3 + self.pmarks
+        self.total = self.marks1 + self.marks2 + self.marks3 + self.smarks
 
     def display_result(self):
         print(f"Total marks: {self.total}\n")
