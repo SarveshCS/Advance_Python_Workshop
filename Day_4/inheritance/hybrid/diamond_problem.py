@@ -9,9 +9,10 @@ class C:
         print("This is method 1 in class C")
 
 class D(B, C):
-    def learn(self):
-        pass
+    pass
+
 a = A()
 b = B()
 c = C()
 d = D()
+d.learn()
