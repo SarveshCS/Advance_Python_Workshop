@@ -223,3 +223,10 @@ re.display_result()
 ```
 
 [Click here to check out this example](./inheritance/hybrid/example_1.py)
+
+### Questions
+
+> Q1. WAP that extends the class Employee. Derive two classes Manager and Team Leader from Employee class. Display all the details of the employee
+> working under a particular Manager and Team Leader.
+
+[Answer](./questions/question_1.py)
