@@ -230,3 +230,31 @@ re.display_result()
 > working under a particular Manager and Team Leader.
 
 [Answer](./questions/question_1.py)
+
+## Diamond problem
+
+It refers to an ambiguity that arises when two classes Class2 and Class3 inherit from a superclass Class1 and Class4 inherits from both Class2 and Class3.
+
+If there is a method `m` which is an overridden method in one of the Class2 and Class3 or both then the ambiguity arises which of the method `m` Class4 should inherit.
+
+```python
+class A:
+    def learn(self):
+        print("This is method 1 in class A")
+class B:
+    def learn(self):
+        print("This is method 1 in class B")
+class C:
+    def learn(self):
+        print("This is method 1 in class C")
+
+class D(B, C):
+    def learn(self):
+        pass
+a = A()
+b = B()
+c = C()
+d = D()
+```
+
+[Click here to explore more](./inheritance/hybrid/diamond_problem.py)
