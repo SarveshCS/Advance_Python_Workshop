@@ -262,7 +262,7 @@ print(c._Computer__max_price) # Way to access private class variable
 
 1. Public
 2. [Protected](#protected-modifier)
-3. [Private]()
+3. [Private](./)
 
 ### Protected Modifier
 
@@ -285,3 +285,59 @@ class Student:
 ```
 
 [Click here to check out this example](./access_modifier/example_1.py)
+
+## Iterator
+
+_Defination_: An iterable is an object that contains a sequence or countable values that can be trasversed upon.
+
+_Iterable_: Iterables are objects that act as a iterable container to get the iterator.
+
+> _Anything that you can loop over in python id called an iterable._
+>
+> _For an object to be considered an iterable, it must have iter() method._
+>
+> **Iterables in Python**
+>
+> - `Tuples`
+> - `Numbers`
+> - `Lists`
+> - `Sets`
+> - `Range`
+> - `String`
+> - `Dictionary`
+
+## Iterator Protocol
+
+The iterator objects are required to support the following two methods, which togather form the iterator protocol:
+
+1. `iterator.iter()` : Returns the iterator object itself. This is required to allow both containers and iterators to be used with `for` and `in` statements. (present in iterables)
+
+2. `iterator.next()` : Return the next item from the container, If there are no more itemms, raise the `StopIteration` exception. (Present in iterators)
+
+[Click here to explore](./iterator/basic.py)
+
+> While loop is faster, because it does not go through the wrapper.
+>
+> It just uses soethong similar to `GOTO`, ti jump to another line
+
+### iter()
+
+Syntax: `next(object, sentinel)`
+
+> object -> It can be any runtime entity of any class
+>
+> Sentinel (optional) -> Special value that is used to represent, the end of a sequence.
+
+```python
+x = [1, 2, 3, 4, 5, 6, 7, 8]
+value = x.__iter__()
+print(value)
+print(dir(x))
+print(dir(value))
+```
+
+---
+
+**Sequence**: `Strings`, `List`, `Tuples`.
+
+**Iterables**: `Dictionary`, `Sets`, `Files`, `Objects`
