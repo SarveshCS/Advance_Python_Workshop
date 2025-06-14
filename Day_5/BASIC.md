@@ -86,7 +86,7 @@ print(D.mro()) # [<class '__main__.D'>, <class '__main__.C'>, <class '__main__.A
 from abc import ABC, abstractmethod
 ```
 
-### Example 1
+### Example 1 (abstract)
 
 ```python
 from abc import ABC, abstractmethod
@@ -113,3 +113,116 @@ print(rec.area())
 > Q1. Create a abstract class name `Polygon`, create a abstract method named `number_of_sides`. Inherit this class in `Pentagon`, `Hexagon`, `Quadilateral`.
 
 [Answer](./abstract_class/question_1.py)
+
+## Polymorphism
+
+> Poly  -> Many
+> Morph -> Ability to chnage
+
+- Polymorphism in python is the abilty of an object to take many forms.
+- It allows to perfom the same action in many different ways.
+
+### Types of polymorphism
+
+1. [Polymorphism in Operator](#1-polymorphism-in-operators)
+2. [Polymorphism in Built-in Functions](#2-polymorphism-in-built-in-functions)
+3. [Polymorphism in Class Methods](#3-polymorphism-in-class-methods)
+4. [Polymorphism in Inheritance (Method overriding)](#4-polymorphism-in-inheritance-method-overriding)
+5. [Method overloading](./polymorphism/method_overloading.py)
+6. [Operator Overloading](./polymorphism/operator_overloading.py)
+
+#### 1. Polymorphism in Operators
+
+Example 1:
+
+> **'+'**
+>
+> addition -> `5 + 2 = 7`
+>
+> concatination -> `'5' + '2' = '52`
+
+Example 2:
+
+> **'*'**
+>
+> multiplication -> `6 * 2 = 12`
+>
+> repetition -> `'8' * 3 = '888`
+
+#### 2. Polymorphism in Built-in Functions
+
+Example 1:
+
+> **len()** Built-in
+>
+> It return length of iterables, and length of keys in dicts.
+>
+> Which means it works for different types of data, though it's the same function.
+
+#### 3. Polymorphism in Class Methods
+
+When we create different methods in different classes but with the same exact name.
+
+Example 1:
+
+```python
+class Ferrari:
+    def fuel_type(self):
+        print('Petrol')
+    def max_speed(self):
+        print('Max speed is 350')
+
+class BMW:
+    def fuel_type(self):
+        print('Diesel')
+    def max_speed(self):
+        print('Max speed is 240')
+
+ferrari = Ferrari()
+bmw = BMW()
+
+for car in (ferrari, bmw):
+    car.fuel_type()
+    car.max_speed()
+```
+
+[Click here to check out this code](./polymorphism/class_method.py)
+
+#### 4. Polymorphism in Inheritance (Method overriding)
+
+Method overriding allows a child class to provide a specific implementation of a method that is already defined in its parent class.
+
+```python
+class Animal:
+    def make_sound(self):
+        print("Animal makes sound")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("Dog barks")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("Cat meows")
+
+# polymorphism in inheritance
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.make_sound()
+```
+
+[Click here to check out this code](./polymorphism/in_inheritance.py)
+
+#### 5. Method Overloading
+
+Python doesn't support true method overloading like Java/C++, but we can simulate it using default parameters or `*args`.
+
+[Click here to check out this code](./polymorphism/method_overloading.py)
+
+#### 6. Operator Overloading
+
+Operator overloading allows us to define custom behavior for operators when used with user-defined classes.
+
+[Click here to check out this code](./polymorphism/operator_overloading.py)
+
