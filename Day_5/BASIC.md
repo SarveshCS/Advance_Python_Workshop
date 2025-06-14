@@ -216,6 +216,8 @@ for animal in animals:
 
 #### 5. Method Overloading
 
+Two or more methods with the same name but different number of parameters.
+
 Python doesn't support true method overloading like Java/C++, but we can simulate it using default parameters or `*args`.
 
 [Click here to check out this code](./polymorphism/method_overloading.py)
@@ -226,3 +228,60 @@ Operator overloading allows us to define custom behavior for operators when used
 
 [Click here to check out this code](./polymorphism/operator_overloading.py)
 
+### Dispatch Decorator
+
+Will be used for method overloading
+
+## Encapsulation
+
+It is a mechanism of wrapping the data (variables) and code acting on the data (methods) togather as a single unit.
+
+In encapsulation, the variables of a class will hidden from other classes. This hides the data and also make it easy for the other classes or the user to use it's functionality.
+
+```python
+class Computer:
+    def __init__(self):
+        self.__max_price = 1000
+    
+    def sell(self):
+        print(f"Selling Price: {self.__max_price}")
+
+    def set_max_price(self, price):
+        self.__max_price = price
+    
+c = Computer()
+c.sell()
+c.set_max_price(2458)
+c.sell()
+print(c._Computer__max_price) # Way to access private class variable
+```
+
+[Click here to check out the code](./encapsulation/example_1.py)
+
+## Acces Modifiers
+
+1. Public
+2. [Protected](#protected-modifier)
+3. [Private]()
+
+### Protected Modifier
+
+Members of a class that are declared protected are only accessible to a class derived from it.
+
+> Data members can be protected by adding a underscore (`_`) before the variable name.
+
+Example 1:
+
+```python
+class Student:
+    _name = None
+    _roll = None
+    _branch = None
+
+    def __init__(self, name, roll, branch):
+        self._name = name
+        self._roll = roll
+        self._branch = branch
+```
+
+[Click here to check out this example](./access_modifier/example_1.py)

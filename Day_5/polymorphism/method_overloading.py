@@ -1,7 +1,3 @@
-# Method overloading in Python
-# Python doesn't support true method overloading like Java/C++
-# But we can simulate it using default parameters or *args
-
 class Calculator:
     def add(self, a, b=0, c=0):
         return a + b + c
