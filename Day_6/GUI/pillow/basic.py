@@ -1,12 +1,9 @@
 from PIL import ImageTk, Image
 from tkinter import Tk, Frame, Label
-import os
-from pathlib import Path
 
 root = Tk()
 
-
-frame = Frame(root, width=600, height=400)
+frame = Frame(root, width=400, height=400)
 frame.place(anchor='center', relx=0.5, rely=0.5)
 frame.pack()
 
