@@ -17,7 +17,7 @@ inner=Frame(mainframe, width=45, bd=0, relief=RIDGE)
 inner.pack()
 
 e=Entry(inner, width=75, borderwidth=0)
-e.grid(row=0, column=0, rowspan=0, columnspan=4, padx=5, pady=5)
+e.grid(row=0, column=0, columnspan=4, padx=5, pady=5)
 
 def onclick(num):
     x=e.get()
