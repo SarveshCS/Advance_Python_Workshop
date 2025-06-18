@@ -20,4 +20,16 @@ Data-sets in pandas are usually multi-dimensional tables, known as "Data Frames"
 - Data Frame is a whole table, whereas Series is like a column
 - Data Frame is heterogeneous i.e, collection of different types of value.
 
-#### Labels
+## Read the CSV file
+
+- calculate max marks in all the different subjects.
+- calculate min marks in all the different subjects.
+- apply aggregation fucntion on different groups in the given file.
+- perform inner, outer, left, right joins.
+- chnage the name of the column 'official email id' to 'email id'.
+- provide the name of the students, who scored more than 80% in mathematics.
+- provide the name of the students, who scored less than 75% in physics.
+- add a new column named SGPA - `SGPS = total_marks/10`.
+- add a new column GRADE (A, B, C, D).
+
+this data should be reflected on the file too.
