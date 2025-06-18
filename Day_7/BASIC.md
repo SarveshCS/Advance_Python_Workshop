@@ -38,7 +38,7 @@ If the new array is larger thanthe original array than the new array is filled w
 >
 > where as reshape does return.
 
-## Attributes in numpy
+### Attributes in numpy
 
 - `ndim`- Dimension of the array
 - `shape` - Order of the matrix
@@ -46,7 +46,7 @@ If the new array is larger thanthe original array than the new array is filled w
 - `itemsize` - Bytes occupied by each element of the array
 - `dtype` - Gives the type of element
 
-## Funcitiosn to create common matrices
+### Funcitiosn to create common matrices
 
 `np.zeros((3, 4), dtype='int16')`: 3x4 matrix of zeros (integers)
 `np.ones((3, 4), dtype='int16')`: 3x4 matrix of ones (integers)
@@ -55,6 +55,6 @@ If the new array is larger thanthe original array than the new array is filled w
 `np.diag([10, 20, 30, 40, 50])`: Diagonal matrix with given values
 `np.eye(5, dtype='int16')`: 5x5 identity matrix (integers)
 
-## Array functions
+### Array functions
 
 - `flatten`, `ravel`
