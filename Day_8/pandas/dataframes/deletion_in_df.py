@@ -14,8 +14,14 @@ df['Address'] = ['India', 'Bhutan', 'Nepal']
 
 df['pra_status'] = df['Marks'] > 80
 
-# Insering a column as a given locatio
-
 df.insert(1, 'Phone', [768372674, 6942473, 384627468])
+
+# print(df)
+
+del df['pra_status']
+
+print(df)
+
+print(df.pop('Phone'))
 
 print(df)
