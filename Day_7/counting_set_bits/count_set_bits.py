@@ -6,5 +6,5 @@ def count_set(n):
 
     return count
 
-n = 7
+n = 6
 print(count_set(n))
