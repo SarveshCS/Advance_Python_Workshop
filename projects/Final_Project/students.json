@@ -1,0 +1,13 @@
+[
+  {
+    "id": "1",
+    "name": "Sarvesh Mishra",
+    "major": "CSE",
+    "enrolled_course_codes": [
+      "2",
+      "3",
+      "4"
+    ],
+    "type": "student"
+  }
+]

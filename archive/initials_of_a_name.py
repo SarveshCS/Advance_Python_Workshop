@@ -1,0 +1,1 @@
+print('.'.join(i[0] for i in i[:-1])+' '+i[-1]if len((i:=input().split())) else '')

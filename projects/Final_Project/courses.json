@@ -1,0 +1,52 @@
+[
+  {
+    "course_code": "2",
+    "title": "PYTHON",
+    "credits": 2,
+    "prerequisite_codes": [],
+    "enrolled_student_ids": [
+      "1"
+    ],
+    "assigned_faculty_id": null
+  },
+  {
+    "course_code": "3",
+    "title": "NUMPY",
+    "credits": 2,
+    "prerequisite_codes": [],
+    "enrolled_student_ids": [
+      "1"
+    ],
+    "assigned_faculty_id": null
+  },
+  {
+    "course_code": "4",
+    "title": "PANDAS",
+    "credits": 3,
+    "prerequisite_codes": [],
+    "enrolled_student_ids": [
+      "1"
+    ],
+    "assigned_faculty_id": null
+  },
+  {
+    "course_code": "5",
+    "title": "TENSORFLOW",
+    "credits": 3,
+    "prerequisite_codes": [],
+    "enrolled_student_ids": [],
+    "assigned_faculty_id": null
+  },
+  {
+    "course_code": "1",
+    "title": "Basics of LLMs",
+    "credits": 12,
+    "prerequisite_codes": [
+      "2",
+      "3",
+      "4"
+    ],
+    "enrolled_student_ids": [],
+    "assigned_faculty_id": null
+  }
+]
